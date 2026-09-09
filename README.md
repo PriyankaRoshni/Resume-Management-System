@@ -1,6 +1,4 @@
-Sure — use this **shorter, clean version**:
 
-````markdown
 # NASSCOM Project – Resume Management & Classification System
 
 ## 📌 Overview
