@@ -91,7 +91,4 @@ Sensitive files such as `.env`, `credentials.json`, `token.pickle`, databases, a
 
 GitHub: [https://github.com/PriyankaRoshni](https://github.com/PriyankaRoshni)
 
-```
 
-This is **more than enough for a college/NASSCOM project submission** and looks much cleaner than the long version.
-```
