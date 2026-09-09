@@ -1,5 +1,4 @@
-
-# NASSCOM Project – Resume Management & Classification System
+# Resume Management & Classification System
 
 ## 📌 Overview
 
