@@ -1,0 +1,441 @@
+.stack {
+  display: grid;
+  gap: 16px;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.statCard {
+  padding: 16px;
+  border-radius: var(--radius-lg);
+  position: relative;
+  overflow: hidden;
+}
+.statIcon {
+  width: 34px;
+  height: 34px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+.tint_blue {
+  background: rgba(59, 130, 246, 0.22);
+  border-color: rgba(59, 130, 246, 0.28);
+}
+.tint_green {
+  background: rgba(34, 197, 94, 0.18);
+  border-color: rgba(34, 197, 94, 0.25);
+}
+.tint_amber {
+  background: rgba(245, 158, 11, 0.18);
+  border-color: rgba(245, 158, 11, 0.25);
+}
+.tint_rose {
+  background: rgba(244, 63, 94, 0.18);
+  border-color: rgba(244, 63, 94, 0.25);
+}
+.statValue {
+  font-size: 28px;
+  font-weight: 800;
+}
+.statLabel {
+  margin-top: 6px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.62);
+}
+
+.twoCol {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 14px;
+}
+
+.panel {
+  padding: 16px;
+  border-radius: var(--radius-lg);
+}
+.panelHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.panelTitle {
+  font-weight: 800;
+  letter-spacing: 0.2px;
+}
+.panelSubtitle {
+  margin-top: 3px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.58);
+}
+.headerActions {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.domainList {
+  display: grid;
+  gap: 10px;
+  margin-top: 12px;
+}
+.domainRow {
+  display: grid;
+  grid-template-columns: 160px 1fr 40px;
+  gap: 10px;
+  align-items: center;
+}
+.domainName {
+  color: rgba(255, 255, 255, 0.74);
+  font-size: 13px;
+}
+.domainBarTrack {
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+}
+.domainBarFill {
+  height: 100%;
+  border-radius: 999px;
+}
+.domainValue {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.70);
+  text-align: right;
+  font-family: var(--mono);
+}
+
+.trendChart {
+  height: 220px;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 10px;
+  align-items: end;
+  padding: 10px 6px 0;
+}
+.trendCol {
+  display: grid;
+  gap: 8px;
+  justify-items: center;
+}
+.trendBar {
+  width: 100%;
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgba(59, 130, 246, 0.95), rgba(59, 130, 246, 0.55));
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.35);
+}
+.trendLabel {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.62);
+}
+
+/* Inbox */
+.inboxGrid {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 14px;
+}
+.filterPanel {
+  padding: 16px;
+  border-radius: var(--radius-lg);
+  height: fit-content;
+}
+.fieldGroup {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.fieldLabel {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.66);
+  margin-bottom: 6px;
+  font-weight: 650;
+}
+.fieldHint {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.52);
+  margin-bottom: 6px;
+}
+.field {
+  display: grid;
+  gap: 8px;
+  margin-top: 10px;
+}
+.btnRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 14px;
+}
+.tableWrap {
+  overflow: auto;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 14px;
+}
+.noteRow {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Processing */
+.uploadRow {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.file {
+  flex: 1;
+  min-width: 260px;
+}
+.errorBox {
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 14px;
+  background: rgba(239, 68, 68, 0.12);
+  border: 1px solid rgba(239, 68, 68, 0.35);
+  color: rgba(255, 255, 255, 0.9);
+  white-space: pre-wrap;
+}
+.empty {
+  text-align: center;
+  padding: 18px 10px;
+  color: rgba(255, 255, 255, 0.62);
+}
+
+/* Classification */
+.pageHead {
+  padding: 4px 2px 6px;
+}
+.pageH1 {
+  font-size: 18px;
+  font-weight: 900;
+}
+.pageH2 {
+  margin-top: 4px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.60);
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 18px;
+}
+.tab {
+  border: 1px solid transparent;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.72);
+  padding: 10px 12px;
+  border-radius: 14px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.tab:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.10);
+}
+.tabActive {
+  background: rgba(59, 130, 246, 0.22);
+  border-color: rgba(59, 130, 246, 0.30);
+  color: rgba(255, 255, 255, 0.92);
+}
+.tabCount {
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.10);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.classifyGrid {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 14px;
+}
+.rightRail {
+  display: grid;
+  gap: 14px;
+  align-content: start;
+}
+.cards {
+  display: grid;
+  gap: 12px;
+}
+.candidateCard {
+  padding: 14px;
+  border-radius: var(--radius-lg);
+}
+.candidateRow {
+  display: grid;
+  grid-template-columns: auto 1fr 260px;
+  gap: 12px;
+  align-items: center;
+}
+.avatar2 {
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  background: rgba(59, 130, 246, 0.18);
+  border: 1px solid rgba(59, 130, 246, 0.28);
+  font-weight: 800;
+}
+.candidateMeta {
+  line-height: 1.1;
+}
+.candidateName {
+  font-weight: 850;
+}
+.candidateDomain {
+  margin-top: 4px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.62);
+}
+
+.confBox {
+  justify-self: end;
+  text-align: right;
+  display: grid;
+  gap: 8px;
+}
+.confLabel {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.55);
+}
+.confRow {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+  align-items: center;
+}
+.confTrack {
+  width: 160px;
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.10);
+  overflow: hidden;
+}
+.confFill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(34, 197, 94, 0.95), rgba(59, 130, 246, 0.95));
+}
+.confPct {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.70);
+}
+
+.skillsLabel {
+  margin-top: 12px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.65);
+}
+.skillChips {
+  margin-top: 8px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.chip {
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(59, 130, 246, 0.22);
+  background: rgba(59, 130, 246, 0.10);
+  color: rgba(255, 255, 255, 0.82);
+}
+.fileRow {
+  margin-top: 12px;
+  color: rgba(255, 255, 255, 0.70);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.kv {
+  margin-top: 12px;
+  display: grid;
+  gap: 10px;
+}
+.kvRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.exportList {
+  margin-top: 12px;
+  display: grid;
+  gap: 10px;
+}
+.exportItem {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 10px;
+  align-items: center;
+}
+.actionStack {
+  margin-top: 12px;
+  display: grid;
+  gap: 10px;
+}
+
+/* Excel */
+.inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.excelHeader {
+  margin: 10px 0 12px;
+  padding: 12px 14px;
+  border-radius: 16px;
+  border: 1px solid rgba(34, 197, 94, 0.25);
+  background: rgba(34, 197, 94, 0.12);
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+.excelTitle {
+  font-weight: 800;
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+}
+
+@media (max-width: 1100px) {
+  .statsGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .twoCol {
+    grid-template-columns: 1fr;
+  }
+  .inboxGrid {
+    grid-template-columns: 1fr;
+  }
+  .classifyGrid {
+    grid-template-columns: 1fr;
+  }
+  .candidateRow {
+    grid-template-columns: auto 1fr;
+  }
+  .confBox {
+    justify-self: start;
+    text-align: left;
+  }
+}
+

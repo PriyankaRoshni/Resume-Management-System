@@ -1,0 +1,14 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+psycopg2-binary
+pydantic
+python-multipart
+alembic
+
+# reuse existing pipeline deps (LLM + Excel)
+groq
+pandas
+openpyxl
+PyPDF2
+python-docx

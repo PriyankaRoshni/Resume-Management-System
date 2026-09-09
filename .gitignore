@@ -1,0 +1,38 @@
+.env
+.env.*
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+node_modules/
+dist/
+build/
+
+# Uploaded files / generated outputs
+backend/uploads/
+backend/.data/
+system/data/attachments/
+system/results/
+results/
+
+# Secrets (never commit)
+system/credentials.json
+token.pickle
+
+# Local/private project data
+.env
+**/.env
+**/credentials.json
+**/token.pickle
+*.db
+.data/
+**/.data/
+uploads/
+**/uploads/
+system/data/attachments/
+node_modules/
+**/node_modules/
